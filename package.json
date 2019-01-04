@@ -1,6 +1,7 @@
 {
   "name": "article",
   "version": "0.1.0",
+  "homepage": "https://silent777.github.io/article/",
   "private": true,
   "dependencies": {
     "react": "^16.7.0",
@@ -11,10 +12,15 @@
     "styled-components": "^4.1.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
   },
   "eslintConfig": {
     "extends": "react-app"
